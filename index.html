@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, he initial-scale=1.0">
+<title>Song Ito Guys</title>
+<style>
+body {
+  background-color: rgba(8, 8, 8, 0.692);
+  text-align: center;
+}
+
+  #bars-container {
+    position: fixed;
+    width: 50%;
+    height: auto;
+    bottom: 0;
+  }
+
+  #bass-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20px;
+  height: 200px;
+  background-color: blue;
+  display: inline-block;
+}
+
+#treble-bar {
+  position: absolute;
+  height: 200px;
+  left: 25px;
+  bottom: 0px;
+  width: 20px;
+  background-color: red;
+  display: inline-block;
+}
+
+#voice-bar {
+  position: absolute;
+  height: 200px;
+  left: 50px;
+  bottom: 0px;
+  width: 20px;
+  background-color: yellow;
+  display: inline-block;
+}
+
+#lyricsBox {
+  font-size: 15px;
+}
+
+
+.scrollbar-container {
+  margin: auto;
+  width: 433px;
+  height: 250px;
+  overflow-y: scroll; /* Enable vertical scrollbar */
+  border: 1px solid #ccc;
+  scroll-behavior: smooth;
+    }
+    /* CSS for the content inside the scrollbar container */
+.content {
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+  <div id="countdown"></div>
+  
+
+<textarea id="lyricsBox" rows="10" cols="50" readonly></textarea>
+      <br>
+      
+      <div class="scrollbar-container" id="scrollbar-container">
+        <div class="content">
+
+          <h3>Somewhere Only We Know</h3>
+          <audio id="audioPlayer1" src="somewhere only we know.mp3" controls></audio>
+
+          <br>
+    
+          <h3>This Side Of Paradise</h3>
+
+          <audio id="audioPlayer2" src="this side of paradise.mp3" controls></audio>
+          
+          <br>
+    
+          <h3>Heather x Eyes Blue Lofi Remix</h3>
+
+          <audio id="audioPlayer3" src="Heather x Eyes Blue Lofi Remix.mp3" controls></audio>
+
+          <br>
+          
+          <h3>Cars Outside Sped Up Version</h3>
+    
+          <audio id="audioPlayer4" src="Cars Outside Sped Up Version.mp3" controls></audio>
+          
+          <br>
+
+          <h3>Counting The Stars</h3>
+    
+          <audio id="audioPlayer5" src="counting the stars.mp3" controls></audio>
+          
+          <br>
+
+          <h3>Atlantis<h3>
+    
+          <audio id="audioPlayer6" src="atlantis.mp3" controls></audio>
+
+          <br>
+
+          <h3>Dark Horse</h3>
+    
+          <audio id="audioPlayer7" src="dark horse.mp3" controls></audio>
+          
+          <br>
+
+          <h3>Animals</h3>
+          
+          <audio id="audioPlayer8" src="animals.mp3" controls></audio>
+
+          <br>
+
+          <h3>Locked Out Of Heaven</h3>
+    
+          <audio id="audioPlayer9" src="locked out of heaven.mp3" controls></audio>
+          
+          <br>
+    
+          <h3>Albatroz</h3>
+
+          <audio id="audioPlayer10" src="albatroz.mp3" controls></audio>
+          
+          <br>
+    
+
+          <h3>Get Low</h3>          
+          <audio id="audioPlayer11" src="get low.mp3" controls></audio>
+          
+          <br>
+
+        </div>
+      </div>
+
+      
+
+
+
+      <a href="#audioPlayer11">Last Song</a>
+      <br>
+      <a href="#audioPlayer1">First Song</a>
+      
+      
+      <div id="bars-container">
+          <div id="bass-bar"></div>
+          <div id="treble-bar"></div>
+          <div id="voice-bar"></div>
+      </div>
+
+      <div id="copyright-colored-sign" class="cps">
+        <h5>&copy; 2024 Mini Music Player. All Rights Reserved.</h5>
+        <h6>Created By: <a href="https://www.facebook.com/avebayland" class="fb-name">Abraham Bayland</a></h6>
+      </div>
+
+
+<!--<script src="script.js" type="text/javascript"></script>-->
+<script src="dump.js" type="text/javascript"></script>
+</body>
+</html>
